@@ -7,9 +7,7 @@ A personal tip jar deployed as a Soroban smart contract. Supporters send XLM wit
 | | |
 |---|---|
 | **Frontend** | `https://tipjar.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/tipjar` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBZVMLNIGL24LYFRJR73NT25UCGI4KCU5SJMCRQVD4GYTZ5ZIYK2FQR4` |
 
 ## How It Works
 
