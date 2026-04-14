@@ -6,8 +6,8 @@ A personal tip jar deployed as a Soroban smart contract. Supporters send XLM wit
 
 | | |
 |---|---|
-| **Frontend** | `https://tipjar.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBZVMLNIGL24LYFRJR73NT25UCGI4KCU5SJMCRQVD4GYTZ5ZIYK2FQR4` |
+| **Frontend** | `https://tipjar-stellar.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CDDVZTKGRH7UHWOWRABRYYGCLTZS63I7OZZXR75UAOTSJX4ZE7SXP2HV` |
 
 ## How It Works
 
@@ -16,6 +16,16 @@ A personal tip jar deployed as a Soroban smart contract. Supporters send XLM wit
 3. **Share** the URL — supporters open it and send XLM tips with messages
 4. **Withdraw** — owner calls `withdraw()` anytime to collect all accumulated tips
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -42,3 +52,5 @@ get_tips() -> Vec<Tip>             // last 50 tips, newest first
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
